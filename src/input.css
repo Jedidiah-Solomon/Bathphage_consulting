@@ -25,7 +25,56 @@
   text-align: center; /* Centers the icon horizontally */
   border-radius: 50%; /* Makes the icon circular */
 }
+
 .dark {
   background-color: #333; /* Dark background color */
   color: #ccc; /* Light text color */
+}
+
+/* Custom styling for the mobile menu */
+
+.mobile-menu {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 4rem; /* Adjust this value to position the menu correctly below the nav */
+  right: 0;
+  width: 40%;
+  z-index: 50;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .mobile-menu {
+    flex-direction: column;
+  }
+
+  .mobile-menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .mobile-menu li {
+    border-bottom: 1px solid #1a202c;
+  }
+
+  .mobile-menu a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  .mobile-menu a:hover {
+    background-color: #4a5568;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-links {
+    display: flex;
+  }
+
+  #mobile-menu-button {
+    display: none;
+  }
 }
