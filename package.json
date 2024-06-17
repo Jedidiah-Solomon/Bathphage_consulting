@@ -6,7 +6,9 @@
   "scripts": {
     "start": "live-server ./public",
     "build:css": "postcss src/input.css -o public/styles.css",
-    "build:css:prod": "cross-env NODE_ENV=production postcss src/input.css -o public/styles.css"
+    "build:css:prod": "cross-env NODE_ENV=production postcss src/input.css -o public/styles.css",
+    "deploy": "vercel",
+    "build": "mkdir -p build && cp -r public/* build/"
   },
   "keywords": [
     "Business Strategy Development",
