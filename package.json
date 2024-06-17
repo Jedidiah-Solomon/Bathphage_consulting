@@ -1,0 +1,45 @@
+{
+  "name": "bathphage-consulting-agency",
+  "version": "1.0.0",
+  "description": "Bathphage Consulting Agency: Business Support and Development Services. Tailwind CSS setup for building and styling responsive websites.",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server ./public",
+    "build:css": "postcss src/input.css -o public/styles.css",
+    "build:css:prod": "cross-env NODE_ENV=production postcss src/input.css -o public/styles.css"
+  },
+  "keywords": [
+    "Business Strategy Development",
+    "Market Research and Analysis",
+    "Business Model Innovation",
+    "Competitive Analysis",
+    "SWOT Analysis",
+    "Strategic Planning",
+    "Digital Transformation",
+    "Digital Strategy Formulation",
+    "Process Automation",
+    "Technology Integration",
+    "Data Analytics and Business Intelligence",
+    "Digital Marketing Strategy",
+    "Marketing and Branding",
+    "Brand Development and Management",
+    "Social Media Marketing",
+    "Content Marketing Strategy",
+    "SEO and SEM Services"
+  ],
+  "author": "Jedidiah Solomon for Jude Anumudu",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "cross-env": "^7.0.3",
+    "cssnano": "^7.0.2",
+    "live-server": "^1.2.2",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.4"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.13"
+  }
+}

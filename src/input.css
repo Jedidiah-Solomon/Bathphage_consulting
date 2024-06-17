@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styles for dark mode toggle button */
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 50; /* Ensure the toggle button is above other elements */
+}
+
+.dark-mode-toggle i {
+  font-size: 24px;
+  color: #333;
+  display: block; /* Ensures the icon takes up full space of the circle */
+  width: 24px; /* Set the width and height to match font size */
+  height: 24px;
+  line-height: 24px; /* Aligns icon vertically within circle */
+  text-align: center; /* Centers the icon horizontally */
+  border-radius: 50%; /* Makes the icon circular */
+}
+.dark {
+  background-color: #333; /* Dark background color */
+  color: #ccc; /* Light text color */
+}
